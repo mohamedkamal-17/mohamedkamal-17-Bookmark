@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&display=swap" rel="stylesheet">
+
+
+  <title>Your Bookmark Page</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favorite-icon-outline-style-design-260nw-1722886267.jpg">
+
+</head>
+
+<body class="bg-danger-subtle  position-relative">
+  <div class=" container d-flex flex-column justify-content-center ">
+    <h1 class="mx-auto my-5">BOOKMARKER</h1>
+    <div class="bookmarker-contant  d-flex flex-column justify-content-center w-100 ">
+
+      <h2 class="mx-auto my-5"> <i class="fa-solid fa-bookmark  px-2"></i>Bookmark your favorite sites<i
+          class=" px-2 fa-solid fa-bookmark"></i></h2>
+
+      <section class="site-name d-flex flex-column justify-content-center w-100">
+        <label for="sit-name" class="fw-bold">
+          <i class="fa-solid fa-floppy-disk"></i>
+          Site Name
+        </label>
+        <input type="text" id="site-name" class=" form-control" required>
+      </section>
+      <section class="site-url d-flex flex-column justify-content-center w-100">
+        <label for="site-url" class="fw-bold"><i class="fa-solid fa-link"></i> Site Url</label>
+        <input type="text" id="site-url" class="form-control">
+      </section>
+
+      <button class="btn btn-danger p-2 mx-auto my-3 " id="supmut-btn"> submit</button>
+
+      <table class="table text-center w-100">
+        <thead>
+          <tr>
+            <th>index</th>
+            <th>wepsite Name</th>
+            <th>viste</th>
+            <th>delete</th>
+          </tr>
+
+        </thead>
+        <tbody class="row-record" id="row-record">
+
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="unvalid-masseg z-3 w-50 mx-auto h-50 my-auto position-absolute bg-light-subtle p-2 d-none ">
+
+    <div class="ms-head d-flex justify-content-between">
+      <div>
+        <i class="fa-solid fa-circle text-warning mx-1"></i>
+        <i class="fa-solid fa-circle textdanger mx-1"></i>
+        <i class="fa-solid fa-circle text-info mx-1 "></i>
+      </div>
+      <div class="">
+        <i class="fa-solid fa-circle-xmark fs-4 text-dark close-btn"></i>
+
+      </div>
+
+
+    </div>
+
+
+
+    <p class="fw-bold mt-5">Site Name or Url is not valid, Please follow the rules below :</p>
+    <p class="fw-medium py-2"><i class="fa-regular fa-circle-right text-danger me-2"></i>Site name must contain at least 3 characters</p>
+    <p class="fw-medium py-2"><i class="fa-regular fa-circle-right  text-danger me-2"></i>Site URL must be a valid one</p>
+
+  </div>
+  <div class="full-layr z-2 position-absolute top-0 d-none bottom-0 w-100 d-block ">
+
+  </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
