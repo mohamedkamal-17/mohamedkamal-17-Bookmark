@@ -31,6 +31,12 @@ h2{
     /* Apply background-clip for WebKit browsers */
     background-clip: text; /* Apply background-clip for standard browsers */
 }
+
+.bookmarker-contant{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
 .full-layr {
     height: 100vh;
     width: 100px;
